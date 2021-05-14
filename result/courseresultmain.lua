@@ -245,9 +245,9 @@ local function main()
 	end
 
 	--Judges
-	for i = 0, 4 do
-		table.insert(skin.destination, {id = "judge"..i, filter = 1, op = {180 + 1 * i}, dst = {{x = songInfoX + 700, y = songY - 12, w = 560, h = 48, r = 221, g = 229, b = 237}}})
-	end
+	--for i = 0, 4 do
+		--table.insert(skin.destination, {id = "judge"..i, filter = 1, op = {180 + 1 * i}, dst = {{x = songInfoX + 700, y = songY - 12, w = 560, h = 48, r = 221, g = 229, b = 237}}})
+	--end
 
 	return skin
 end
