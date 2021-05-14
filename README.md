@@ -3,31 +3,33 @@
 Currently in the **very early stages of development**.
 
 ## Decide Skin
-Features:
+### Features:
 * Stagefile toggle
 
-Work in Progress:
+### Work in Progress:
 * More effects
 * Bitmap fonts
 * Animated background support... and assets
 * Background
+* Clean up the code
 
-Known Bugs:
+### Known Bugs:
 * None as far as I know
 
 ## Result Skin
-Features:
+### Features:
 * Stagefile toggle
 * Left and Right side score info
 * Timing average and stdev info
 * The other typical basic features
 
-Work in Progress:
+### Work in Progress:
 * More effects
 * IR Data
 * Pie chart
+* Clean up the code
 
-Known Bugs:
+### Known Bugs:
 * IR Rank is coded in, but it shows rank for previously played song. Currently disabled until I figure out what the hell is wrong with it.
 
 ## Music Select 
@@ -41,3 +43,10 @@ Not yet in designing Stages
 
 ## 9 Key Play
 Not yet in designing stages
+
+# Screenshots
+### Results
+![2P Result](/screenshots/2PResult.png?raw=true)
+![1P Result](/screenshots/1PResult.png?raw=true)
+### Decide
+![Decide](/screenshots/Decide.png?raw=true)
