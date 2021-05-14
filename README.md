@@ -41,3 +41,8 @@ Not yet in designing Stages
 
 ## 9 Key Play
 Not yet in designing stages
+
+## Screenshots
+[[https://raysasquach.s-ul.eu/dE1NVRa3.png|alt=result2P]]
+[[https://raysasquach.s-ul.eu/nsjXIqGQ.png|alt=result1P]]
+[[https://raysasquach.s-ul.eu/RCUhRx84.png|alt=decide]]
