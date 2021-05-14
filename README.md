@@ -29,6 +29,7 @@ Currently in the **very early stages of development**.
 * IR Data
 * Pie chart
 * Clean up the code
+* Course Result
 
 ### Known Bugs:
 * IR Rank is coded in, but it shows rank for previously played song. Currently disabled until I figure out what the hell is wrong with it.
