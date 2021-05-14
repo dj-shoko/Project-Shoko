@@ -3,12 +3,12 @@ main_state = require("main_state")
 local property = require("lua.mainproperty")
 
 local filepath = {
-	{name = "Default Stagefile",							path = "customize/stagefile/*.png"},
+	{name = "Default Stagefile",			path = "customize/stagefile/*.png"},
 	{name = "Result Background (CLEAR AAA)",	path = "customize/bg/aaa/*.png"},
 	{name = "Result Background (CLEAR AA)",		path = "customize/bg/aa/*.png"},
 	{name = "Result Background (CLEAR A)",		path = "customize/bg/a/*.png"},
-	{name = "Result Background (CLEAR)",			path = "customize/bg/clear/*.png"},
-	{name = "Result Background (FAILED)",			path = "customize/bg/failed/*.png"},
+	{name = "Result Background (CLEAR)",		path = "customize/bg/clear/*.png"},
+	{name = "Result Background (FAILED)",		path = "customize/bg/failed/*.png"},
 }
 
 local header = {
@@ -100,10 +100,6 @@ local function main()
 	  avg_str = "Avg " .. avg_timing .. " ms"
 	end
 	local std_str = "Stdev " .. std_dev .. " ms"
-
-	gauge = main_state.number(107)
-	gaugedec = main_state.number(407)
-	gaugetext_str = gauge .. "." .. gaugedec .. "%"
 
 	local playerid_str = "Current Player: ".. main_state.text(2)
 
