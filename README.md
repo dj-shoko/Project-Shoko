@@ -10,7 +10,7 @@ Currently in the **very early stages of development**.
 * More effects
 * Bitmap fonts
 * Animated background support... and assets
-* Background
+* Background Images
 * Clean up the code
 
 ### Known Bugs:
@@ -24,6 +24,7 @@ Currently in the **very early stages of development**.
 * The other typical basic features
 
 ### Work in Progress:
+* Background Images
 * More effects
 * IR Data
 * Pie chart
