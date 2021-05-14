@@ -24,9 +24,12 @@ elseif main_state.option(150) then
   diff_str = "SPU"
 end
 
---local table_str = main_state.text(1001)
 local level_str = main_state.text(1002)
 if "" == level_str then level_str = "☆" .. main_state.number(96) end
+
+gauge = main_state.number(107)
+gaugedec = main_state.number(407)
+gaugetext_str = gauge .. "." .. gaugedec .. "%"
 
 if main_state.number(1163) == main_state.number(1164) then
   bpm_str = bpmmin .. "-" .. bpmmax
