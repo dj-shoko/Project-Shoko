@@ -5,6 +5,7 @@ Currently in the **very early stages of development**.
 ## Decide Skin
 ### Features:
 * Stagefile toggle
+* Subtitle options
 
 ### Work in Progress:
 * More effects
@@ -32,10 +33,10 @@ Currently in the **very early stages of development**.
 * Course Result
 
 ### Known Bugs:
-* IR Rank is coded in, but it shows rank for previously played song. Currently disabled until I figure out what the hell is wrong with it.
+* None as far as I know
 
 ## Music Select 
-Currently in designing stages
+Finished designing stage... implementation at work
 
 ## 7 Key Play
 Currently in designing stages
