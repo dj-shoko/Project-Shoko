@@ -27,7 +27,6 @@ Currently in the **very early stages of development**.
 ### Work in Progress:
 * Background Images
 * More effects
-* IR Data
 * Pie chart
 * Clean up the code
 * Course Result
