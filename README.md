@@ -50,6 +50,6 @@ Not yet in designing stages
 # Screenshots
 ### Results
 ![2P Result](/screenshots/Result2P v1.png?raw=true)
-![1P Result](/screenshots/Result1P v1.png?raw=true)
+![1P Result](/screenshots/Result1P.png?raw=true)
 ### Decide
-![Decide](/screenshots/Decide.png?raw=true)
+![Decide](/screenshots/Decide v1.png?raw=true)
