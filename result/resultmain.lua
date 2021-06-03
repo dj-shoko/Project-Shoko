@@ -18,7 +18,7 @@ local header = {
 	h = 1440,
 	scene = 3600000,
 	input = 500,
-	fadeout = 500,
+	fadeout = 1000,
 	property = property.property,
 	filepath = filepath
 }
@@ -253,6 +253,17 @@ local function main()
 	for i = 0, 4 do
 		table.insert(skin.destination, {id = "judge"..i, filter = 1, op = {180 + 1 * i}, dst = {{x = songInfoX + 700, y = songY - 12, w = 560, h = 48, r = 221, g = 229, b = 237}}})
 	end
+
+	--fadein
+	table.insert(skin.destination, {id = -110, loop = -1, dst = {
+			{time =   0, x = 0, y = 0, w = 2560, h = 1440, a = 255},
+			{time = 500, x = 0, y = 720, w = 2560, h = 0, a = 0},
+	}})
+	--fadeout
+	table.insert(skin.destination, {id = -110, loop = 1000, timer = 2, dst = {
+			{time =   0, x = 0, y = 720, w = 2560, h = 0, a = 0},
+			{time = 1000, x = 0, y = 0, w = 2560, h = 1440, a = 255},
+	}})
 
 	return skin
 end
