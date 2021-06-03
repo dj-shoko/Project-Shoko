@@ -18,6 +18,12 @@ module.value = {
   {id = "currentrate",	src = "parts", x = 750, y = 870, w = 176, h = 18, divx = 11, digit = 3, zeropadding = 3, ref = 102},
   {id = "currentratedec",	src = "parts", x = 950, y = 924, w = 176, h = 18, divx = 11, digit = 2, ref = 103},
 
+  {id = "gauge", src = "parts", x = 816, y = 60, w = 341, h = 38, divx = 11, digit = 3, zeropadding = 3, ref = 107},
+  {id = "gauge_dec", src = "parts", x = 816, y = 60, w = 310, h = 38, divx = 10, digit = 1, ref = 407},
+
+  {id = "ir_rank", src = "parts", x = 816, y = 98, w = 176, h = 19, divx = 11, digit = 4, zeropadding = 4, ref = 179},
+  {id = "ir_total", src = "parts", x = 816, y = 98, w = 176, h = 19, divx = 11, digit = 4, zeropadding = 4, ref = 180},
+
   {id = "ep",		src = "parts", x = 750, y = 792, w = 352, h = 37, divx = 11, digit = 4, ref = 420},
   {id = "epf",		src = "parts", x = 750, y = 755, w = 352, h = 37, divx = 11, digit = 4, ref = 421},
   {id = "eps",		src = "parts", x = 750, y = 829, w = 352, h = 37, divx = 11, digit = 4, ref = 422},

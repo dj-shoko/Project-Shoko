@@ -11,21 +11,24 @@ songsec = main_state.number(1164)
 
 local diff_str = nil
 if main_state.option(151) then
-  diff_str = "SPB"
+  diff_str = "Beginner"
 elseif main_state.option(152) then
-  diff_str = "SPN"
+  diff_str = "Normal"
 elseif main_state.option(153) then
-  diff_str = "SPH"
+  diff_str = "Hyper"
 elseif main_state.option(154) then
-  diff_str = "SPA"
+  diff_str = "Another"
 elseif main_state.option(155) then
-  diff_str = "SPI"
+  diff_str = "Insane"
 elseif main_state.option(150) then
-  diff_str = "SPU"
+  diff_str = "Unknown"
 end
 
 local level_str = main_state.text(1002)
-if "" == level_str then level_str = "☆" .. main_state.number(96) end
+local star_str = "☆"
+if main_state.option(155) then star_str = "★" end
+
+if "" == level_str then level_str = star_str .. main_state.number(96) end
 
 gauge = main_state.number(107)
 gaugedec = main_state.number(407)
@@ -36,7 +39,12 @@ if main_state.number(1163) == main_state.number(1164) then
 else
   bpm_str = main_state.number(92)
 end
-duration_str = songmin .. ":" .. songsec
+
+if songsec < 10 then
+  duration_str = songmin .. ":" .. "0" .. songsec
+else
+  duration_str = songmin .. ":" .. songsec
+end
 
 module.text = {
   {id = "titlefull",	font = 0, size = 48, align = 1, constantText = main_state.text(12)},

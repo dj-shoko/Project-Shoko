@@ -41,6 +41,11 @@ module.image = {
 
   {id = "ratepercent",			src = "parts", x = 974, y = 870, w = 21, h = 19},
   {id = "rateperiod",			src = "parts", x = 964, y = 870, w = 10, h = 18},
+
+  {id = "gaugeperiod",			src = "parts", x = 1206, y = 60, w = 10, h = 38},
+  {id = "gaugepercent",			src = "parts", x = 1162, y = 60, w = 38, h = 38},
+
+  {id = "ir_slash",			src = "parts", x = 1004, y = 98, w = 14, h = 19},
 }
 
 for i = 0, 7 do

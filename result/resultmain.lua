@@ -36,7 +36,6 @@ local function main()
 
 	skin.source = {
 		{id = "parts",	path = "parts.png"},
-		{id = "groove", path = "groove.png"},
 		{id = "grade", path = "customize/grade/default.png"},
 		{id = "stagefile",	path = "customize/stagefile/*.png"},
 		{id = "bg_aaa",	path = "customize/bg/aaa/*.png"},
@@ -103,14 +102,13 @@ local function main()
 
 	local playerid_str = "Current Player: ".. main_state.text(2)
 
-	--local ir_str = "Internet Ranking " .. main_state.number(179) .. "/" .. main_state.number(180)
-	--IR ranking for previously played song
+	local ir_str = "Internet Ranking:"
 
 	if skin_config.option["Play Side"] == 900 then
 	  table.insert(skin.text, {id = "avg",	font = 0, size = 24, align = 0, constantText = avg_str})
 	  table.insert(skin.text, {id = "std",	font = 0, size = 24, align = 0, constantText = std_str})
 	  table.insert(skin.text, {id = "player",	font = 0, size = 24, align = 2, constantText = playerid_str})
-	 	--table.insert(skin.text, {id = "ir",	font = 0, size = 24, align = 2, constantText = ir_str})
+	 	table.insert(skin.text, {id = "ir",	font = 0, size = 24, align = 2, constantText = ir_str})
 	  table.insert(skin.text, {id = "offline",	font = 0, size = 48, align = 2, constantText = "NETWORK OFFLINE"})
 	else
 	  table.insert(skin.text, {id = "avg",	font = 0, size = 24, align = 2, constantText = avg_str})
@@ -138,16 +136,23 @@ local function main()
 		{id = "std",	filter = 1,	dst = {{x = timingX, y = 6, h = 24, r = 221, g = 229, b = 237}}},
 
 		--IR Info
-		{id = "player", op = {51},	filter = 1,	dst = {{x = playerX, y = 36, h = 24, r = 221, g = 229, b = 237}}},
-		--{id = "ir", op = {51},	filter = 1,	dst = {{x = playerX, y = 6, h = 24, r = 221, g = 229, b = 237}}},
-		{id = "offline", op = {50},	filter = 1,	dst = {{x = playerX, y = 6, h = 48, r = 221, g = 120, b = 120}}},
+		{id = "player", op = {51, 922},	filter = 1,	dst = {{x = playerX, y = 36, h = 24, r = 221, g = 229, b = 237}}},
+		{id = "ir", op = {51, 922},	filter = 1,	dst = {{x = playerX, y = 6, h = 24, r = 221, g = 229, b = 237}}},
+		{id = "ir_rank", op = {51, 922},	filter = 1,	dst = {{x = playerX + 200, y = 8, w = 16, h = 19}}},
+		{id = "ir_slash", op = {51, 922},	filter = 1,	dst = {{x = playerX + 264, y = 8, w = 16, h = 19}}},
+		{id = "ir_total", op = {51, 922},	filter = 1,	dst = {{x = playerX + 280, y = 8, w = 16, h = 19}}},
+		{id = "offline", op = {50, 922},	filter = 1,	dst = {{x = playerX, y = 6, h = 48, r = 221, g = 120, b = 120}}},
 
 		--Gauge Area
 		{id = "graphbox", filter = 1, dst = {{x = playInfoX, y = gaugeY - 59, w = 724, h = 420}}},
 		{id = "gaugeborder", dst = {{x = playInfoX + 18, y = gaugeY, w = 688, h = 342}}},
 		{id = "gaugegraph", blend = 2, dst = {{x = playInfoX + 20, y = gaugeY + 2, w = 684, h = 338}}},
 		{id = "judgegraph_timing", blend = 2, dst = {{x = playInfoX + 20, y = gaugeY + 2, w = 684, h = 338}}},
-		{id = "gaugetext",	filter = 1, dst = {{x = playInfoX + 20, y = gaugeY - 59, h = 48, r = 221, g = 229, b = 237}}},
+		--{id = "gaugetext",	filter = 1, dst = {{x = playInfoX + 20, y = gaugeY - 59, h = 48, r = 221, g = 229, b = 237}}},
+		{id = "gauge", offset = 64, dst = {{x = playInfoX + 20, y = gaugeY - 48, w = 31, h = 38}}},
+		{id = "gaugeperiod", offset = 64, dst = {{x = playInfoX + 117, y = gaugeY - 48, w = 10, h = 38}}},
+		{id = "gauge_dec", offset = 64, dst = {{x = playInfoX + 128, y = gaugeY - 48, w = 31, h = 38}}},
+		{id = "gaugepercent", offset = 64, dst = {{x = playInfoX + 162, y = gaugeY - 48, w = 38, h = 38}}},
 		{id = "levelbox", filter = 1, dst = {{x = playInfoX + 25, y = levelY + 1, w = 675, h = 60, r = RGB[1], g = RGB[2], b = RGB[3]}}},
 		{id = "level",	filter = 1, dst = {{x = playInfoX + 38, y = levelY, h = 48, r = RGB[1], g = RGB[2], b = RGB[3]}}},
 
