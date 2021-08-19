@@ -6,12 +6,11 @@ Currently in the **very early stages of development**.
 ### Features:
 * Stagefile toggle
 * Subtitle options
+* Bitmap fonts
 
 ### Work in Progress:
 * More effects
-* Bitmap fonts
 * Animated background support... and assets
-* Background Images
 * Clean up the code
 
 ### Known Bugs:
@@ -24,18 +23,26 @@ Currently in the **very early stages of development**.
 * Timing average and stdev info
 * The other typical basic features
 
+### Known Bugs:
+* None as far as I know
+
 ### Work in Progress:
-* Background Images
 * More effects
 * Pie chart
 * Clean up the code
 * Course Result
+* Adding random options somewhere
+* May move the level/table to bottom the center instead
 
 ### Known Bugs:
 * None as far as I know
 
 ## Music Select 
-Finished designing stage... implementation at work
+* Basic functionality
+
+### Work in Progress:
+* Those last three buttons on the left sidebar
+* Porting the code to lua instead...
 
 ## 7 Key Play
 Currently in designing stages
@@ -47,6 +54,9 @@ Not yet in designing Stages
 Not yet in designing stages
 
 # Screenshots
+### Results
+![Music Select](/screenshots/Music Select Option.png?raw=true)
+![Music Select Option](/screenshots/Music Select.png?raw=true)
 ### Results
 ![2P Result](/screenshots/Result2P.png?raw=true)
 ![1P Result](/screenshots/Result1P.png?raw=true)
