@@ -53,6 +53,12 @@ Not yet in designing Stages
 ## 9 Key Play
 Not yet in designing stages
 
+## General Bugs
+* Fonts, bitmap and TTF, may be missing some glyphs and could cause a crash as a result... 黯 is missing a glyph, placeholder in place for now.
+
+### Progress on fix:
+* Trying to merge fonts to fix the missing glyphs issue...
+
 # Screenshots
 ### Results
 ![Music Select](/screenshots/MusicSelect.png?raw=true)
