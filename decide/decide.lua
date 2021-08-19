@@ -57,9 +57,9 @@ local function main()
 		{id = 0, path = "../fonts/MPLUSRounded1c-Bold.ttf"},
 		{id = 1, path = "../fonts/MPLUSRounded1c-Medium.ttf"},
 		{id = 2, path = "../fonts/MPLUSRounded1c-Regular.ttf"},
-		{id = 3, path = "../fonts/bitmap/Decide/Title.fnt"},
-		{id = 4, path = "../fonts/bitmap/Decide/Artist.fnt"},
-		{id = 5, path = "../fonts/bitmap/Decide/Sub.fnt"},
+		{id = 3, path = "../fonts/bitmap/Title.fnt"},
+		{id = 4, path = "../fonts/bitmap/Artist.fnt"},
+		{id = 5, path = "../fonts/bitmap/Sub.fnt"},
 	}
 	skin.text = {
 		{id = "table", font = 4, size = -58, ref = 1003, overflow = 1, align = 1, shadowOffsetX = subShadowOffset, shadowOffsetY = subShadowOffset},
