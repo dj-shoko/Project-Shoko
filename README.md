@@ -55,8 +55,8 @@ Not yet in designing stages
 
 # Screenshots
 ### Results
-![Music Select](/screenshots/MusicSelectOption.png?raw=true)
-![Music Select Option](/screenshots/MusicSelect.png?raw=true)
+![Music Select](/screenshots/MusicSelect.png?raw=true)
+![Music Select Option](/screenshots/MusicSelectOption.png?raw=true)
 ### Results
 ![2P Result](/screenshots/Result2P.png?raw=true)
 ![1P Result](/screenshots/Result1P.png?raw=true)
