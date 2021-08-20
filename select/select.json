@@ -214,16 +214,16 @@
 		{"id":"option-selector22", "src":53, "x":0, "y":560, "w":288, "h":86},
 
 		//BGA
-		{"id":"option-selector31", "src":52, "x":551, "y":1192, "w":288, "h":218},
+		{"id":"option-selector31", "src":52, "x":551, "y":1324, "w":288, "h":218},
 		{"id":"option-selector32", "src":52, "x":551, "y":1258, "w":288, "h":218},
-		{"id":"option-selector33", "src":52, "x":551, "y":1324, "w":288, "h":218},
+		{"id":"option-selector33", "src":52, "x":551, "y":1192, "w":288, "h":218},
 
 		//GAS
-		{"id":"option-selector41", "src":52, "x":32, "y":1192, "w":488, "h":350},
-		{"id":"option-selector42", "src":52, "x":32, "y":1258, "w":488, "h":350},
+		{"id":"option-selector41", "src":52, "x":32, "y":1456, "w":488, "h":350},
+		{"id":"option-selector42", "src":52, "x":32, "y":1390, "w":488, "h":350},
 		{"id":"option-selector43", "src":52, "x":32, "y":1324, "w":488, "h":350},
-		{"id":"option-selector44", "src":52, "x":32, "y":1390, "w":488, "h":350},
-		{"id":"option-selector45", "src":52, "x":32, "y":1456, "w":488, "h":350},
+		{"id":"option-selector44", "src":52, "x":32, "y":1258, "w":488, "h":350},
+		{"id":"option-selector45", "src":52, "x":32, "y":1192, "w":488, "h":350},
 
 		{"id":"nonran", "src":0, "x":656, "y":0, "w":238, "h":40},
 		{"id":"mirror", "src":0, "x":656, "y":40, "w":238, "h":40},
@@ -355,10 +355,10 @@
 		{"id":"time_minute", "src":6, "x":360, "y":118, "w":352, "h":41, "divx":11, "digit":2, "padding":1, "ref":25},
 		{"id":"time_second", "src":6, "x":360, "y":118, "w":352, "h":41, "divx":11, "digit":2, "padding":1, "ref":26},
 
-		{"id":"duration", "src":52, "x":544, "y":1500, "w":230, "h":27, "divx":10, "digit":4, "align":0, "ref":313},
-		{"id":"duration-ms", "src":52, "x":544, "y":1500, "w":230, "h":27, "divx":10, "digit":4, "align":0, "ref":312},
+		{"id":"duration", "src":52, "x":544, "y":1560, "w":230, "h":27, "divx":10, "digit":4, "align":0, "ref":313},
+		{"id":"duration-ms", "src":52, "x":544, "y":1560, "w":230, "h":27, "divx":10, "digit":4, "align":0, "ref":312},
 		{"id":"greennumber_bottom", "src":6, "x":0, "y":175, "w":240, "h":31, "divx":10, "digit":4, "align":0, "ref":313},
-		{"id":"judgetiming", "src":52, "x":544, "y":1500, "w":276, "h":54, "divx":12, "divy":2, "digit":3, "ref":12},
+		{"id":"judgetiming", "src":52, "x":544, "y":1560, "w":276, "h":54, "divx":12, "divy":2, "digit":3, "ref":12},
 
 		{"id":"mainbpm-num", "src":6, "x":0, "y":212, "w":440, "h":54, "divx":10, "digit":4, "align":1, "digit":3, "ref":92},
 	],
