@@ -8,15 +8,22 @@ module.image = {
   {id = "bg_c",		src = "bg_c",	x = 0, y = 0, w = -1, h = -1},
   {id = "bg_f",		src = "bg_f",	x = 0, y = 0, w = -1, h = -1},
 
+  --{id = "random-mod", src = parts, x = 2560, y = 0, w = 340, h = 480, divy = 10, len = 10, ref = 42},
+  --{id = "random-mod-2p", src = parts, x = 2560, y = 0, w = 340, h = 192, divy = 4, len = 4, ref = 43},
+  --{id = "random-mod-dp", src = parts, x = 2560, y = 0, w = 340, h = 192, divy = 4, len = 4, ref = 54},
+
   {id = "clear",		src = "parts", x = 0, y = 0, w = 202, h = 341, divy = 11, len = 11, ref = 370},
   {id = "bestclear",		src = "parts", x = 0, y = 0, w = 202, h = 341, divy = 11, len = 11, ref = 371},
 
   {id = "stage",		src = "parts", x = 0, y = 410, w = 542, h = 85},
-  {id = "titlebox",		src = "parts", x = 0, y = 1460, w = 2560, h = 70},
+  {id = "titlebox",		src = "parts", x = 0, y = 1530, w = 2560, h = 70},
+  {id = "levelbox",		src = "parts", x = 0, y = 1450, w = 2560, h = 70},
+  {id = "difficultybox",		src = "parts", x = 1885, y = 1170, w = 450, h = 60},
+  {id = "randombox",		src = "parts", x = 816, y = 0, w = 675, h = 60},
 
   {id = "graphbox",		src = "parts", x = 750, y = 1015, w = 724, h = 420},
   {id = "gaugeborder",		src = "parts", x = 750, y = 403, w = 688, h = 342},
-  {id = "levelbox",		src = "parts", x = 816, y = 0, w = 675, h = 60},
+  {id = "randombox",		src = "parts", x = 816, y = 0, w = 675, h = 60},
 
   {id = "clearinfobox",		src = "parts", x = 0, y = 526, w = 724, h = 467},
   {id = "clearinfo",		src = "parts", x = 554, y = 0, w = 262, h = 386},

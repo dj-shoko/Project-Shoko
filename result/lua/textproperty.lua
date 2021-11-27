@@ -10,6 +10,7 @@ songmin = main_state.number(1163)
 songsec = main_state.number(1164)
 
 local diff_str = nil
+local ran_str = nil
 if main_state.option(151) then
   diff_str = "Beginner"
 elseif main_state.option(152) then
@@ -24,11 +25,12 @@ elseif main_state.option(150) then
   diff_str = "Unknown"
 end
 
-local level_str = main_state.text(1002)
+local level_str = main_state.text(1003)
+
 local star_str = "☆"
 if main_state.option(155) then star_str = "★" end
 
-if "" == level_str then level_str = star_str .. main_state.number(96) end
+local difflvl_str = diff_str .. " " .. star_str .. main_state.number(96)
 
 gauge = main_state.number(107)
 gaugedec = main_state.number(407)
@@ -48,7 +50,8 @@ end
 
 module.text = {
   {id = "titlefull",	font = 0, size = 48, align = 1, constantText = main_state.text(12)},
-  {id = "level",	font = 0, size = 48, align = 0, constantText = diff_str .. " " .. level_str},
+  {id = "level",	font = 0, size = 48, align = 1, overflow = 1, constantText = level_str},
+  {id = "difficulty",	font = 0, size = 48, align = 1, overflow = 1, constantText = difflvl_str},
   {id = "gaugetext",	font = 0, size = 48, align = 0, constantText = gaugetext_str},
   --{id = "table",	font = 0, size = 48, align = 1, constantText = table_str},
 

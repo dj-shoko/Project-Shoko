@@ -70,6 +70,19 @@ local function main()
 		end
 	end
 
+	local levelY = 80
+	leveladd = 70
+	local tableh = 60
+	local tablef = 48
+
+	local level_str = main_state.text(1003)
+	if "" == level_str then
+		levelY = -10
+		tableh = 1
+		tablef = 1
+		leveladd = 90
+	end
+
 	local timingX = 2500
 	local playerX = 60
 	local playInfoX = 1776
@@ -86,7 +99,7 @@ local function main()
 	local judgeY = 162
 	local clearY = 550
 	local songY = 400
-	local levelY = 1053
+	local ranY = 1053
 	local gaugeY = 1047
 
 	local avg_timing	= main_state.number(374) + (main_state.number(375) * 0.01)
@@ -130,18 +143,22 @@ local function main()
 		{id = "stage", filter = 1, dst = {{x = 1009, y = 1350, w = 542, h = 85}}},
 		{id = "titlebox", filter = 1, dst = {{x = 0, y = 0, w = 2560, h = 70}}},
 		{id = "titlefull",	filter = 1,	dst = {{x = 1280, y = 6, h = 48, r = 221, g = 229, b = 237}}},
+		{id = "levelbox", filter = 1, dst = {{x = 0, y = levelY, w = 2560, h = tableh}}},
+		{id = "level",	filter = 1, dst = {{x = 1280, y = levelY, w = 950, h = tablef, r = RGB[1], g = RGB[2], b = RGB[3]}}},
+		{id = "difficultybox", filter = 1, dst = {{x = 1055, y = levelY + leveladd, w = 450, h = 60, r = 56, g = 56, b = 56}}},
+		{id = "difficulty",	filter = 1, dst = {{x = 1280, y = levelY + leveladd, w = 950, h = 48, r = RGB[1], g = RGB[2], b = RGB[3]}}},
 
 		--Timing Info
 		{id = "avg",	filter = 1,	dst = {{x = timingX, y = 36, h = 24, r = 221, g = 229, b = 237}}},
 		{id = "std",	filter = 1,	dst = {{x = timingX, y = 6, h = 24, r = 221, g = 229, b = 237}}},
 
 		--IR Info
-		{id = "player", op = {51, 922},	filter = 1,	dst = {{x = playerX, y = 36, h = 24, r = 221, g = 229, b = 237}}},
-		{id = "ir", op = {51, 922},	filter = 1,	dst = {{x = playerX, y = 6, h = 24, r = 221, g = 229, b = 237}}},
-		{id = "ir_rank", op = {51, 922},	filter = 1,	dst = {{x = playerX + 200, y = 8, w = 16, h = 19}}},
-		{id = "ir_slash", op = {51, 922},	filter = 1,	dst = {{x = playerX + 264, y = 8, w = 16, h = 19}}},
-		{id = "ir_total", op = {51, 922},	filter = 1,	dst = {{x = playerX + 280, y = 8, w = 16, h = 19}}},
-		{id = "offline", op = {50, 922},	filter = 1,	dst = {{x = playerX, y = 6, h = 48, r = 221, g = 120, b = 120}}},
+		{id = "player", op = {51, 922, -923},	filter = 1,	dst = {{x = playerX, y = 36, h = 24, r = 221, g = 229, b = 237}}},
+		{id = "ir", op = {51, 922, -923},	filter = 1,	dst = {{x = playerX, y = 6, h = 24, r = 221, g = 229, b = 237}}},
+		{id = "ir_rank", op = {51, 922, -923},	filter = 1,	dst = {{x = playerX + 200, y = 8, w = 16, h = 19}}},
+		{id = "ir_slash", op = {51, 922, -923},	filter = 1,	dst = {{x = playerX + 264, y = 8, w = 16, h = 19}}},
+		{id = "ir_total", op = {51, 922, -923},	filter = 1,	dst = {{x = playerX + 280, y = 8, w = 16, h = 19}}},
+		{id = "offline", op = {50, 922, -923},	filter = 1,	dst = {{x = playerX, y = 6, h = 48, r = 221, g = 120, b = 120}}},
 
 		--Gauge Area
 		{id = "graphbox", filter = 1, dst = {{x = playInfoX, y = gaugeY - 59, w = 724, h = 420}}},
@@ -153,8 +170,10 @@ local function main()
 		{id = "gaugeperiod", offset = 64, dst = {{x = playInfoX + 117, y = gaugeY - 48, w = 10, h = 38}}},
 		{id = "gauge_dec", offset = 64, dst = {{x = playInfoX + 128, y = gaugeY - 48, w = 31, h = 38}}},
 		{id = "gaugepercent", offset = 64, dst = {{x = playInfoX + 162, y = gaugeY - 48, w = 38, h = 38}}},
-		{id = "levelbox", filter = 1, dst = {{x = playInfoX + 25, y = levelY + 1, w = 675, h = 60, r = RGB[1], g = RGB[2], b = RGB[3]}}},
-		{id = "level",	filter = 1, dst = {{x = playInfoX + 38, y = levelY, h = 48, r = RGB[1], g = RGB[2], b = RGB[3]}}},
+		--{id = "randombox", filter = 1, dst = {{x = playInfoX + 25, y = ranY + 1, w = 675, h = 60, r = RGB[1], g = RGB[2], b = RGB[3]}}},
+		--{id = "random-option",	filter = 1, dst = {{x = playInfoX + 38, y = ranY, w = 340, h = 48}}},
+		--{id = "random-option-2p",	filter = 1, dst = {{x = playInfoX + 38, y = ranY, w = 340, h = 48}}},
+		--{id = "random-option-dp",	filter = 1, dst = {{x = playInfoX + 38, y = ranY, w = 340, h = 48}}},
 
 		--Clear Info Area
 		{id = "clearinfobox", filter = 1, dst = {{x = playInfoX, y = clearY - 26, w = 724, h = 467}}},

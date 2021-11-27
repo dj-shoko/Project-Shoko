@@ -15,7 +15,7 @@ module.property = {
 	}},
 	{name = "Network Info", item = {
 		{name = "On", op = 922},
-		--{name = "Off", op = 923} --WIP
+		{name = "Off", op = 923} --WIP
 	}},
 }
 
