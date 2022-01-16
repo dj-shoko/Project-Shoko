@@ -2,6 +2,9 @@
 1440p Skin for beatoraja, currently only has decide and result skin
 Currently in the **very early stages of development**.
 
+## Known General Bugs
+* Some songs causes a crash due to the Bitmap fonts, or rather lack of...
+
 ## Decide Skin
 ### Features:
 * Stagefile toggle
@@ -32,7 +35,6 @@ Currently in the **very early stages of development**.
 * Clean up the code
 * Course Result
 * Adding random options somewhere
-* May move the level/table to bottom the center instead
 
 ### Known Bugs:
 * None as far as I know
